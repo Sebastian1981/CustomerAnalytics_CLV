@@ -1,4 +1,4 @@
-# Customer Lifetime Value (CLV) Approximation Using Machine Learning Algorithms
+# Customer Lifetime Value Approximation Using Machine Learning
 
 ## Project Overview
 >In marketing, customer lifetime value (CLV or often CLTV), lifetime customer value (LCV), or life-time value (LTV) is a prognostication of the net profit contributed to the whole future relationship with a customer. The prediction model can have varying levels of sophistication and accuracy, ranging from a crude heuristic to the use of complex predictive analytics techniques. One of the major uses of CLV is customer segmentation, which starts with the understanding that not all customers are equally important. CLV-based segmentation model allows the company to predict the most profitable group of customers, understand those customers' common characteristics, and focus more on them rather than on less profitable customers. CLV-based segmentation can be combined with a Share of Wallet (SOW) model to identify "high CLV but low SOW" customers with the assumption that the company's profit could be maximized by investing marketing resources in those customers. [**Ref:** https://en.wikipedia.org]
@@ -29,7 +29,7 @@ For modeling the CLV, we used a "Light Gradient Boosting Machine" algorithm (Lig
 
 ![Regression Model result ](/images/CLV_regression_model.jpg)
 
-### CLV Model Explanation
+### CLV Model Explanation and Model Fairness 
 #### Global Explanation
 In consistence with the EDA-findings the SHAP values reveal that overall the features "Number of Policies" and "Monthly Premium Auto" have a significant impact on CLV. The feature "Vehicle Class" in return has only moderate impact. With respect to model Fairness, the sensitive feature "Gender" also has moderate impact on CLV, which we should keep in mind. 
 
