@@ -11,7 +11,7 @@ Besides pure building and evaluating machine learnign models we also focus on mo
 
 
 ## CLV Regression Modeling Results
-### Exploratory Data Analysis
+### Exploratory Data Analysis (EDA)
 The pearson correlation analysis between numeric features and the target (i.e. CLV) reveals moderate correlations for the features "Monthly Premium Auto" and "Total Claim Amount".
 
 ![Pearson Correlation Table ](/images/PearsonCorrelation.jpg)
@@ -30,8 +30,8 @@ For modeling the CLV, we used a "Light Gradient Boosting Machine" algorithm (Lig
 ![Regression Model result ](/images/CLV_regression_model.jpg)
 
 ### CLV Model Explanation
-For modeling the CLV, we used a "Light Gradient Boosting Machine" algorithm (LightGBM) which can explain 68% of the variance (R2) on unseen customer data.
+in consitence with the EDA-findings the SHAP values reveal that the features "Number of Policies" and "Monthly Premium Auto" have a high impact on CLV. The feature "Vehicle Class" in return has only moderate impact. With respect to model Fairness, the sensitive feature "Gender" also has moderate impact on CLV, which we should keep in mind. 
 
-![Regression Model result ](/images/CLV_regression_model.jpg)
+![Regression Model mean abs shap vals ](/images/regression_model_meanshap.jpg)
 
 
