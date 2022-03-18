@@ -23,3 +23,10 @@ The boxplots show a clear effect of the feature "Vehicle Class" on CLV.
 With respect to gender, we observe no obvious effect on CLV which is an important precondition for model fairness.
 
 ![Boxplot: CLV vs Gender](/images/CLV_gender.jpg)
+
+### CLV Model Evaluation
+The pearson correlation analysis between numeric features and the target (i.e. CLV) reveals moderate correlations for the features "Monthly Premium Auto" and "Total Claim Amount".
+
+![Pearson Correlation Table ](/images/PearsonCorrelation.jpg)
+
+
