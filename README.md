@@ -8,5 +8,8 @@ We chose two seperate approaches here to model the CLV. In the first approach, t
 Besides pure building and evaluating machine learnign models we also focus on model explainability and model fairness.
 
 
-## CLV Regression Approach Modeling Results
-asdsdsada
+## CLV Regression Modeling Results
+### Exploratory Data Analysis
+The table below reveals moderate linear correlations between the target variabel (i.e. CLV) and the two numeric variables "Monthly Premium Auto" and "Total Claim Amount".  
+![Pearson Correlation Table ](/images/PearsonCorrelation.jpg)
+Besides pure building and evaluating machine learnign m
