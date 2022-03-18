@@ -30,8 +30,15 @@ For modeling the CLV, we used a "Light Gradient Boosting Machine" algorithm (Lig
 ![Regression Model result ](/images/CLV_regression_model.jpg)
 
 ### CLV Model Explanation
-in consitence with the EDA-findings the SHAP values reveal that the features "Number of Policies" and "Monthly Premium Auto" have a high impact on CLV. The feature "Vehicle Class" in return has only moderate impact. With respect to model Fairness, the sensitive feature "Gender" also has moderate impact on CLV, which we should keep in mind. 
+#### Global Explanation
+In consistence with the EDA-findings the SHAP values reveal that overall the features "Number of Policies" and "Monthly Premium Auto" have a significant impact on CLV. The feature "Vehicle Class" in return has only moderate impact. With respect to model Fairness, the sensitive feature "Gender" also has moderate impact on CLV, which we should keep in mind. 
 
 ![Regression Model mean abs shap vals ](/images/regression_model_meanshap.jpg)
+
+#### Local Explanation
+With focus on local model explanation, the force-plot below shows the effect of the different features on the CLV of a single customer. We can see that the expected CLV is located around 8400 (base value). The features "Monthly Premium Auto" and "Number of Policies" push the CLV to a lower value of around 5100. Then there are some features with minor impact (e.g. feature "Income"), however increasing the CLV to the final value of around 5500.  
+
+![Regression Model shap forceplot](/images/regression_model_shaplocal.jpg)
+
 
 
