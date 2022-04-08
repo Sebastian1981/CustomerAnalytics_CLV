@@ -39,9 +39,13 @@ With focus on local model explanation, the plot below shows the effects of the d
 
 ### Model Fairness
 #### Unmitigated Model
-
+With respect to model fairness, the figure below shows the gender-biased model performance in terms of R2 towards the female subgroup. This indicates that the model can predict the CLV for women clearly better than for men. 
 
 ![Regression Model R2 gender dependence](/images/R2_gender_biased.png)
+
+To mitigate this effect, several models were trained to find the best trade-off between model performance and model fairness, as depicted in the figure.
+
+![Regression Models Mitigated](/images/model_fairness.png)
 
 
 
