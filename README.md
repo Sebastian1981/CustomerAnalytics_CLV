@@ -41,4 +41,7 @@ With focus on local model explanation, the plot below shows the effects of the d
 #### Unmitigated Model
 
 
+![Regression Model R2 gender dependence](/images/R2_gender_biased.png)
+
+
 
