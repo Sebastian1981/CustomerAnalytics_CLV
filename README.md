@@ -43,9 +43,11 @@ With respect to model fairness, the figure below shows the gender-biased model p
 
 ![Regression Model R2 gender dependence](/images/R2_gender_biased.png)
 
-To mitigate this effect, several models were trained to find the best trade-off between model performance and model fairness, as depicted in the figure.
+To mitigate this effect, several models were trained to find the best trade-off between model performance and model fairness, as depicted below.
 
 ![Regression Models Mitigated](/images/model_fairness.png)
+
+As we can the, the average model performance of the unmitigated model was between r2=0.65 and r2=0.66 while the r2 group difference was between 0.08-0.10. However, to mitigate model unfairness, we could e.g. choose "model_mitigated #4" in order to clearly reduce the r2 group differnce to the range between 0.06-0.08 while preserving a strong model performance of r2 between r2=0.64 and r2=0.65.
 
 
 
