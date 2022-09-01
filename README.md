@@ -1,9 +1,9 @@
 # Customer Lifetime Value Prediction Using Machine Learning
 
 ## **Project Overview**
-The goal of this project is to 
+The goal of this project is to: 
 - visualize, explore and understand the relations in the dataset
-- implement a regression model to predict life-time value for individual customers
+- compare, train, tune and test regression model to predict life-time value for individual customers
 - analyse feature importance and explain model decisions (explainable ai)
 - analyse model fairness and eventually improve it 
 
